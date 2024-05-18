@@ -484,6 +484,12 @@ call ayu#hi('FloatermBorder', 'editor_fg', '')
 
 " }}}
 
+" nvim-cmp: {{{
+
+call ayu#hi('FloatBorder', 'editor_fg', '')
+
+" }}}
+
 " Neovim: {{{
 
 if has('nvim')
