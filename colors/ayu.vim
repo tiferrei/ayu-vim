@@ -16,6 +16,7 @@ let s:sign_bg = s:ayu_sign_contrast ? 'ui_bg' : ''
 " Vim Highlighting: (see :help highlight-groups) {{{
 
 call ayu#hi('Normal', 'editor_fg', 'editor_bg')
+call ayu#hi('NormalFloat', 'editor_fg', 'editor_bg')
 call ayu#hi('ColorColumn', '', 'editor_line')
 call ayu#hi('CursorColumn', '', 'editor_line')
 call ayu#hi('CursorLine', '', 'editor_line')
@@ -74,9 +75,9 @@ hi! link SelectMode VisualMode
 
 " Neovim Highlights: {{{
 
-call ayu#hi('NormalFloat', 'editor_fg', 'ui_panel_bg')
-call ayu#hi('FloatBorder', 'editor_fg', 'ui_panel_bg')
-call ayu#hi('FloatTitle', 'syntax_keyword', 'ui_panel_bg')
+call ayu#hi('NormalFloat', 'editor_fg', 'editor_bg')
+call ayu#hi('FloatBorder', 'editor_fg', 'editor_bg')
+call ayu#hi('FloatTitle', 'syntax_keyword', 'editor_bg')
 
 " }}}
 
