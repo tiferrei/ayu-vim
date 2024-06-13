@@ -75,9 +75,9 @@ hi! link SelectMode VisualMode
 
 " Neovim Highlights: {{{
 
-call ayu#hi('NormalFloat', 'editor_fg', 'editor_bg')
-call ayu#hi('FloatBorder', 'editor_fg', 'editor_bg')
-call ayu#hi('FloatTitle', 'syntax_keyword', 'editor_bg')
+call ayu#hi('NormalFloat', 'editor_fg', '')
+call ayu#hi('FloatBorder', 'editor_fg', '')
+call ayu#hi('FloatTitle', 'syntax_keyword', '')
 
 " }}}
 
