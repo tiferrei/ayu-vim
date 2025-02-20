@@ -402,6 +402,12 @@ call ayu#hi('CmpItemKindVariable', 'editor_fg', '')
 
 " }}}
 
+" nvim-cmp: {{{
+
+call ayu#hi('FloatBorder', 'editor_fg', '')
+
+" }}}
+
 " Indent Blankline: {{{
 
 call ayu#hi('IndentBlanklineChar', 'editor_indentGuide_normal', '')
@@ -478,6 +484,19 @@ call ayu#hi('rustRepeat', 'extended_repeat', '')
 
 " }}}
 
+" vim-floaterm: {{{
+
+call ayu#hi('FloatermBorder', 'editor_fg', '')
+
+" }}}
+
+" toolbar: {{{
+
+call ayu#hi('ToolbarLine', '', 'ui_line')
+call ayu#hi('ToolbarButton', 'editor_fg', 'ui_selection_normal')
+
+" }}}
+
 " Neovim: {{{
 
 if has('nvim')
@@ -537,8 +556,11 @@ if has('nvim')
 
     call ayu#hi('@include', 'extended_import', '')
 
-    call ayu#hi('@keyword.function', 'extended_keyword_func', '')
+    hi! link @keyword.conditional Conditional
+    hi! link @keyword.exception Exception
     hi! link @keyword.operator @operator
+    hi! link @keyword.repeat Repeat
+    call ayu#hi('@keyword.function', 'extended_keyword_func', '')
     call ayu#hi('@keyword.return', 'extended_conditional', '')
 
     hi! link @method Function
@@ -583,11 +605,11 @@ if has('nvim')
     call ayu#hi('@type.builtin', 'syntax_entity', '', 'italic')
     hi! link @builtinType @type.builtin
     hi! link @type.qualifier Keyword
-    call ayu#hi('@variable', 'editor_fg', '')
-    call ayu#hi('@variable.builtin', 'syntax_constant', '', 'italic')
 
     hi! link @constant.macro PreProc
 
+    call ayu#hi('@variable', 'editor_fg', '')
+    call ayu#hi('@variable.builtin', 'syntax_constant', '', 'italic')
     hi! link @variable.parameter @parameter
     hi! link @variable.member @property
 
