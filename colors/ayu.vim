@@ -402,12 +402,6 @@ call ayu#hi('CmpItemKindVariable', 'editor_fg', '')
 
 " }}}
 
-" nvim-cmp: {{{
-
-call ayu#hi('FloatBorder', 'editor_fg', '')
-
-" }}}
-
 " Indent Blankline: {{{
 
 call ayu#hi('IndentBlanklineChar', 'editor_indentGuide_normal', '')
