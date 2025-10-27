@@ -404,7 +404,8 @@ call ayu#hi('CmpItemKindVariable', 'editor_fg', '')
 
 " nvim-cmp: {{{
 
-call ayu#hi('FloatBorder', 'editor_fg', '')
+call ayu#hi('FloatBorder', 'editor_fg', 'ui_panel_bg')
+call ayu#hi('NormalFloat', 'editor_fg', 'ui_panel_bg')
 
 " }}}
 
