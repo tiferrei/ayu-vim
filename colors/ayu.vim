@@ -74,9 +74,9 @@ hi! link SelectMode VisualMode
 
 " Neovim Highlights: {{{
 
-call ayu#hi('NormalFloat', 'editor_fg', 'ui_panel_bg')
-call ayu#hi('FloatBorder', 'editor_fg', 'ui_panel_bg')
-call ayu#hi('FloatTitle', 'syntax_keyword', 'ui_panel_bg')
+call ayu#hi('NormalFloat', 'editor_fg', 'editor_bg')
+call ayu#hi('FloatBorder', 'editor_fg', 'editor_bg')
+call ayu#hi('FloatTitle', 'syntax_keyword', 'editor_bg')
 
 " }}}
 
@@ -399,13 +399,6 @@ call ayu#hi('CmpItemKindStruct', 'extended_struct', '')
 call ayu#hi('CmpItemKindText', 'syntax_comment', '')
 call ayu#hi('CmpItemKindTypeParameter', 'extended_generic', '')
 call ayu#hi('CmpItemKindVariable', 'editor_fg', '')
-
-" }}}
-
-" nvim-cmp: {{{
-
-call ayu#hi('FloatBorder', 'editor_fg', 'ui_panel_bg')
-call ayu#hi('NormalFloat', 'editor_fg', 'ui_panel_bg')
 
 " }}}
 
